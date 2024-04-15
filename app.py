@@ -35,21 +35,11 @@ def predictRoute():
         image = request.json['image']
         decodeImage(image, clApp.filename)
 
-        # Construct full path to the YOLOv5 script and the input image
-        script_path = "F:/end_to_end_projects/Object-detection-using-YOLOv5/yolov5/detect.py"
-        image_path = "F:/end_to_end_projects/Object-detection-using-YOLOv5/data/inputImage.jpg"
-        model_path = "F:/end_to_end_projects/Object-detection-using-YOLOv5/yolov5/my_model.pt"
+        os.system("cd yolov5/ && python detect.py --weights my_model.pt --img 416 --conf 0.5 --source ../data/inputImage.jpg")
 
-        # Run YOLOv5 detection script
-        os.system(f"python {script_path} --weights {model_path} --img 416 --conf 0.5 --source {image_path}")
-
-        # Encode the output image into base64
         opencodedbase64 = encodeImageIntoBase64("yolov5/runs/detect/exp/inputImage.jpg")
         result = {"image": opencodedbase64.decode('utf-8')}
-
-        # Clean up the runs directory
         os.system("rm -rf yolov5/runs")
-
 
     except ValueError as val:
         print(val)
