@@ -28,14 +28,14 @@ git https://github.com/shon-Rocky/Object-detection-using-YOLOv5.git
 cd Object-detection-using-YOLOv5
 ```
 
-2. Create a virtual environment and activate it:
+3. Create a virtual environment and activate it:
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-3. Install the required packages:
+4. Install the required packages:
 
 ```bash
 pip install -r requirements.txt
@@ -55,6 +55,12 @@ The `templates` folder contains the HTML templates for the web application.
 The `notebooks` folder contains Jupyter notebooks that were used for research and development.
 
 The `Dockerfile` can be used to create a Docker image for the project.
+
+Example Usage
+-----------------
+
+![image](https://github.com/shon-Rocky/Object-detection-using-YOLOv5/assets/140310009/1a5d085c-a428-4fb5-9cd7-53e49bc568ce)
+
 
 Project Structure
 -----------------
