@@ -7,7 +7,7 @@ Waste Detection is a Python project that uses machine learning to detect and cla
 
 ## Workflows
 
-1) onstants
+1) constants
 2) entity
 3) components
 4) pipelines
