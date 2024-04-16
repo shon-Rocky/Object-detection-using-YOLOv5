@@ -19,7 +19,7 @@ Installation
 1. Clone the repository:
 
 ```bash
-git https://github.com/shon-Rocky/Object-detection-using-YOLOv5.git
+git clone https://github.com/shon-Rocky/Object-detection-using-YOLOv5.git
 ```
 
 2. Navigate to the project directory:
